@@ -15,6 +15,8 @@ pipeline {
     stage('run') {
       steps {
         sleep 60
+        sh '''ls -al
+'''
       }
     }
 
