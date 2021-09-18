@@ -7,7 +7,6 @@ pipeline {
           echo 'init'
         }
 
-        sleep 60
         echo 'end'
       }
     }
