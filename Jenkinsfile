@@ -20,6 +20,8 @@ pwd
 echo =======
 ls -al
 echo =======
+cp srv.txt $HOME/runlog/srv.txt.$$
+echo =======
 '''
       }
     }
