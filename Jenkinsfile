@@ -7,7 +7,6 @@ pipeline {
           echo 'init'
         }
 
-        sleep 60
         echo 'end'
       }
     }
@@ -15,6 +14,14 @@ pipeline {
     stage('run') {
       steps {
         sleep 60
+        sh '''echo =======
+pwd
+echo =======
+ls -al
+echo =======
+cp srv.txt $HOME/runlog/srv.txt.$$
+echo =======
+'''
       }
     }
 
