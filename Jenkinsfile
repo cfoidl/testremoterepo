@@ -15,7 +15,11 @@ pipeline {
     stage('run') {
       steps {
         sleep 60
-        sh '''ls -al
+        sh '''echo =======
+pwd
+echo =======
+ls -al
+echo =======
 '''
       }
     }
